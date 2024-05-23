@@ -1,0 +1,310 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: #000000;
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    height: 3000px;
+    box-sizing: border-box;
+}
+
+header{
+    background-image: url(/assets/bg.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0px 40px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-section{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: 22px;
+}
+
+.uber-icons{
+    display: flex;
+    column-gap: 22px;
+    align-items: center;
+}
+
+.user-icons{
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 14px;
+    right: 40px;
+}
+
+.uber-logo img{
+    width: 89.33px;
+    height: 16px;
+}
+
+.user-icons .login-btn{
+    height: 36px;
+    width: 63.86px;
+    color: black;
+    background-color: #fff;
+    border: none;
+    margin-right: 16px;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.user-icons .signup-btn{
+    height: 36px;
+    width: 73.86px;
+    color: #fff;
+    background-color: black;
+    border: none;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    white-space: nowrap;
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    text-align: center;
+    border-radius: 20px;
+}
+
+.order-delivery{
+   display: flex;
+   flex-direction: column; 
+}
+
+.order-delivery h1{
+    margin: 0;
+    font-size: 52px;
+    font-family: 'UberMove';
+    font-weight: 700;
+    line-height: 64px;
+    margin-bottom: 40px;
+}
+
+.input-boxes{
+    display: flex;
+    column-gap: 8px;
+}
+
+.input-div-1{
+    display: flex;
+    width: 500px;
+    height: 56px;
+    padding: 8px 16px;
+    background-color: #fff;
+    align-items: center;
+    column-gap: 2px;
+}
+
+.input-div-1 input{
+    width: 420px;
+    height: 40px;
+    border: none;
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'UberMoveText';
+}
+
+.input-div-1 img{
+    width: 24px;
+    height: 24px;
+}
+
+.input-div-2{
+    width: 191.23px;
+    height: 56px;
+    background-color: #fff;
+    display: flex;
+    align-items: center;
+    padding-left: 16px;
+}
+
+.input-div-2 .clock{
+    width: 24px;
+    height: 24px;
+}
+
+.input-div-2 .arrow{
+    width: 24px;
+    height: 24px;
+}
+
+.input-div-2 span{
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    line-height: 20px;
+    font-weight: 500;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 0 16px 0 12px;
+}
+
+.input-boxes button{
+    /* width: 132.3px;
+    height: 56px; */
+    padding: 12px 16px;
+    border: none;
+    background-color: #000000;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 8px;
+    font-weight: 500;
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.signin-link{
+    margin: 24px 0 0;
+    line-height: 16px;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'UberMoveText', system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.signin-link a{
+    color: #000000;
+}
+
+.empty-div{
+    height: 80px;
+    width: 100%;
+    background-color: #fff;
+}
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start;
+  }
+
+
+@font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3e4d5c36867f9399.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/5ddd680df6aad7fc.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/d769983c82bacb3c.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/38f6b871fae4dd6b.woff") format("woff");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "UberMove";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/14f73a3f74611002.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/c8a98e579ceef11f.woff") format("woff");
+    font-weight: 700;
+    }
+    @font-face {
+    font-family: "UberMoveText";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/276edd4275dda838.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/e4a24370efb4a634.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "UberMoveText";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/eee1724e2e5a8ebd.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/149842a4797e8b79.woff") format("woff");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "SpeedeeApp";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3fc9522fef40031a.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/bcd8eddfac55fb18.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "SpeedeeApp";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/fb04db76a08c12e7.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/96e7c7e8823f59fd.woff") format("woff");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "Postmates";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf91dd9830a4bf06.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/12594e16812e7705.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "Postmates";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/816252b1ce5a5050.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/030554c2543492ba.woff") format("woff");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "Postmates";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/df4998612acf89b1.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ba0cad8e3943b581.woff") format("woff");
+    font-weight: 700;
+    }
+    @font-face {
+    font-family: "GTAmerican";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/08199e60a0fbd4a5.woff") format("woff");
+    font-weight: 500;
+    }
+    @font-face {
+    font-family: "GTAmerican";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/6089458f31fbf053.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "Montserrat";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7c40dbc5b4748777.woff") format("woff"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/c500ef2fed5329be.woff2") format("woff2");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "OrchidText";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/dd7702323823ff6c.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/69181f18689263ee.woff") format("woff");
+    font-weight: 400;
+    }
+    @font-face {
+    font-family: "OrchidTextSemibold";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/59f46082978f39a5.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/4b405f115490483f.woff") format("woff");
+    font-weight: 600;
+    }
+    @font-face {
+    font-family: "OrchidSubheadSemibold";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ac589656674b7e89.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cb159f99c8b7b331.woff") format("woff");
+    font-weight: 700;
+    }
+    @font-face {
+    font-family: "OrchidSubtitleBold";
+    font-display: fallback;
+    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/02dfc821804465e6.woff2") format("woff2"),
+    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/beb2daa52c9aee9d.woff") format("woff");
+    font-weight: 700;
+    }
