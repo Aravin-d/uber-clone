@@ -184,12 +184,48 @@ header{
     background-color: #fff;
 }
 
-main {
+main{
     width: 100%;
     display: flex;
     justify-content: flex-start;
+    gap: 24px;
   }
 
+.deliver, .restaurant, .employees{
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: calc(33.33% - 24px);
+}
+
+.card-1, .card-2, .card-3{
+    width: 100%;
+}
+
+.card-1 img, .card-2 img, .card-3 img{
+    max-width: 100%;
+    height: auto;
+    object-fit: cover;
+    object-position: center;
+}
+
+.card-1 p, .card-2 p, .card-3 p{
+    padding: 0;
+    line-height: 36px;
+    font-size: 28px;
+    font-weight: 700;
+    font-family: 'UberMove';
+    margin: 5px 0 8px;
+}
+
+.card-1 a, .card-2 a, .card-3 a{
+    line-height: 20px;
+    font-weight: 500;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+    font-family: UberMoveText, system-ui, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: black;
+}
 
 @font-face {
     font-family: "UberMove";
@@ -225,86 +261,4 @@ main {
     src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/eee1724e2e5a8ebd.woff2") format("woff2"),
     url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/149842a4797e8b79.woff") format("woff");
     font-weight: 500;
-    }
-    @font-face {
-    font-family: "SpeedeeApp";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/3fc9522fef40031a.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/bcd8eddfac55fb18.woff") format("woff");
-    font-weight: 400;
-    }
-    @font-face {
-    font-family: "SpeedeeApp";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/fb04db76a08c12e7.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/96e7c7e8823f59fd.woff") format("woff");
-    font-weight: 500;
-    }
-    @font-face {
-    font-family: "Postmates";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cf91dd9830a4bf06.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/12594e16812e7705.woff") format("woff");
-    font-weight: 400;
-    }
-    @font-face {
-    font-family: "Postmates";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/816252b1ce5a5050.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/030554c2543492ba.woff") format("woff");
-    font-weight: 500;
-    }
-    @font-face {
-    font-family: "Postmates";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/df4998612acf89b1.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ba0cad8e3943b581.woff") format("woff");
-    font-weight: 700;
-    }
-    @font-face {
-    font-family: "GTAmerican";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/08199e60a0fbd4a5.woff") format("woff");
-    font-weight: 500;
-    }
-    @font-face {
-    font-family: "GTAmerican";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/6089458f31fbf053.woff") format("woff");
-    font-weight: 400;
-    }
-    @font-face {
-    font-family: "Montserrat";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/7c40dbc5b4748777.woff") format("woff"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/c500ef2fed5329be.woff2") format("woff2");
-    font-weight: 400;
-    }
-    @font-face {
-    font-family: "OrchidText";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/dd7702323823ff6c.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/69181f18689263ee.woff") format("woff");
-    font-weight: 400;
-    }
-    @font-face {
-    font-family: "OrchidTextSemibold";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/59f46082978f39a5.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/4b405f115490483f.woff") format("woff");
-    font-weight: 600;
-    }
-    @font-face {
-    font-family: "OrchidSubheadSemibold";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/ac589656674b7e89.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/cb159f99c8b7b331.woff") format("woff");
-    font-weight: 700;
-    }
-    @font-face {
-    font-family: "OrchidSubtitleBold";
-    font-display: fallback;
-    src: url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/02dfc821804465e6.woff2") format("woff2"),
-    url("https://d3i4yxtzktqr9n.cloudfront.net/web-eats-v2/beb2daa52c9aee9d.woff") format("woff");
-    font-weight: 700;
     }
